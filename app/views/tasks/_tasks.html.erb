@@ -1,0 +1,5 @@
+<ul>
+  <% tasks.each do |task| %>
+    <li>user_name:<%= link_to task.user.name, user_path(task.user) %>, <%= link_to task.status, task %> &gt; <%= link_to task.content, task %></li>
+  <% end %>
+</ul>
